@@ -7,37 +7,43 @@ namespace OperatorExercise
     {
 
         // RADIO METHOD
-        public static double radioMethod(double radius)
-        {
 
-            return Math.PI * (radius * radius);
+       
+            public static double radioMethod(double radius)
 
-        }
+            {
 
-        static void Main(string [] args)
+                return Math.PI * (radius * radius);
 
-        {
+            }
 
-            var a = 17;
-            var b = 4;
-            var div = a / b;
-            var mod = a % b;
+            static void Main(string[] args)
 
-            Console.WriteLine($"{a}/{b} is {b} reminder {mod}");
+            {
+
+                var a = 17;
+                var b = 4;
+                var div = a / b;
+                var mod = a % b;
+
+                Console.WriteLine($"{a}/{b} is {b} reminder {mod}");
+
+                
 
 
-//_____________________Exercie 2 ___________________________________________________________
+
+            //_____________________Exercie 2 ___________________________________________________________
 
 
             Console.WriteLine("what is the radio of your circle?");
 
-            var radius = Convert.ToDouble(Console.ReadLine());
+                var radius = double.Parse(Console.ReadLine());
 
 
-            var result = radioMethod(radius);
+                var result = radioMethod(radius);
 
-            Console.WriteLine($"The area of the circle with radio of {radius} is {result}");
-            
+                Console.WriteLine($"The area of the circle with radio of {radius} is {result}");
+
+            }
         }
-    }
-}
+     }
